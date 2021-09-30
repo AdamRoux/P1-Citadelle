@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamePage</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="shuttle"></div>
+        <p>CITADELLE</p>
+        <div class="shuttle left"></div>
+    </header>
+
+    <main>
+        <div class="mainView">
+            <div class="stockPlayer">Stock : 100</div>
+            <div class="player">
+                <div class="lifeBar">
+                    <img src="img/heart(full).png" alt="heart full" class="heart heart1">
+                    <img src="img/heart(full).png" alt="heart full" class="heart heart2">
+                    <img src="img/heart(full).png" alt="heart full" class="heart heart3">
+                </div>
+                <img src="img/space-shuttle.png" alt="shuttle Player" class="shuttleGame shuttlePlayer">
+            </div>
+
+            <div class="bot">
+                <img src="img/space-shuttle.png" alt="shuttle Player" class="shuttleGame shuttleBot">
+                <div class="lifeBar">                    <img src="img/heart(full).png" alt="heart full" class="heart heart1">
+                    <img src="img/heart(full).png" alt="heart full" class="heart heart2">
+                    <img src="img/heart(full).png" alt="heart full" class="heart heart3">
+                </div>
+            </div>
+            <div class="stockBot">Stock : 100</div>
+        </div>
+        <div class="historicContainer">
+
+        </div>
+        <div class="playerInput">
+            <div class="inputGame">
+                <label for="missiles" class="labelInputGame">Entrer le nombre de missiles à envoyer :</label>
+                <input type="number" min="0" max="100" name="missiles" value="0" class="inputMissiles">
+            </div>
+            <button class="button fireButton buttonActive">FIRE !!!</button>
+        </div>
+        <button class="button returnButton"></button>
+
+    </main>
+
+    <footer>
+        Citadelle 2021 ©
+    </footer>
+    
+</body>
+</html>
