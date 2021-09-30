@@ -96,28 +96,56 @@ footer {
 /* RULES PAGE */
 
 .titleRules{
+  position : relative;
   font-size: 35px;
   margin : 5%; 
-  -webkit-animation: glow 2s ease-in-out infinite alternate;
-  -moz-animation: glow 2s ease-in-out infinite alternate;
-  animation: glow 2s ease-in-out infinite alternate;
+  -webkit-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
+  -moz-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
+  animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
 }
 
 @-webkit-keyframes glow {
      from {
       color: #fff;
     text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+    
   }
   
   to {
      color: gray;
-    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px ##c03aae;
-  }   
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
+    
+  }
+}
+@-webkit-keyframes titleUp {
+  from {
+ top : 40%;
+}
+
+to {
+ top : 0%;
+}
 }
 
 .rules{
   text-align: justify;
   margin : 5%;
+  padding: 3%;
+  border : 2px solid white;
+  border-radius: 20px;
+  -webkit-animation: colorChange 1s linear 2s both;
+  -moz-animation: colorChange 1s linear 2s both;
+  animation: colorChange 1s linear 2s both;
+}
+
+@-webkit-keyframes colorChange {
+  from {
+color: rgb(255, 255, 255, 0);
+  }
+  to {
+color: rgb(255, 255, 255, 1);
+  }
+
 }
 
 .pIntro{
@@ -130,7 +158,7 @@ footer {
 }
 
 
-.pFin{
+.pEnd{
   font-size: 25px;
 }
 
@@ -147,4 +175,12 @@ footer {
 }
 .fight a:visited{
   color: white;
+}
+
+.buttonRow{
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  margin-top: 10%;
+  align-items: center;
 }
