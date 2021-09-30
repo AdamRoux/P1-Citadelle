@@ -1,0 +1,94 @@
+html,
+body {
+  height: 100%;
+  font-size: 1em;
+  background: url("img/night_sky.jpg") ;
+  color: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header,
+footer {
+  background-color: #865FB7;
+  text-align: center;
+}
+
+header {
+    height: 10%;
+    font-size: xx-large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shuttle{
+  width : 12%;
+  height: 55%;
+  background: url('img/space-shuttle.png');
+  background-size: cover;
+}
+
+.left{
+  transform: rotate(180deg);
+}
+
+main{
+  text-align : center;
+}
+
+footer {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.imgHome{
+  width: 100%;
+  height: 50%;
+  background: url("img/shuttle.jpg");
+  background-size: cover;
+}
+
+.separator{
+  width: 100%;
+  position: relative;
+  top: -4%;
+}
+
+.buttonContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 35%;
+}
+
+button{
+  width :50%; 
+  height : 15%;
+  font-size : 1.5rem;
+  border-radius: 30%;
+  background-color: #865FB7;
+  color: white;
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 10px 5px black;
+}
+
+.buttonClick{
+  box-shadow: none;
+}
