@@ -33,7 +33,7 @@ header {
 .shuttle{
   width : 12%;
   height: 55%;
-  background: url('img/space-shuttle.png');
+  background: url('/img/space-shuttle.png'); 
   background-size: cover;
 }
 
@@ -41,17 +41,9 @@ header {
   transform: rotate(180deg);
 }
 
-main{
+ /* main{
   text-align : center;
-}
-
-footer {
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+} */
 
 .imgHome{
   width: 100%;
@@ -75,7 +67,7 @@ footer {
   height: 35%;
 }
 
-button{
+ button{
   width :50%; 
   height : 15%;
   font-size : 1.5rem;
@@ -86,9 +78,83 @@ button{
   border-left: 5px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  box-shadow: 0px 10px 5px black;
-}
+  box-shadow: 0px 10px 5px black; 
+} 
 
 .buttonClick{
   box-shadow: none;
 }
+
+
+footer {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS POUR LA CREDIT PAGE */
+
+
+.creditsTitle {
+  
+  text-align: center;
+  
+}
+
+.horizontalSlider {
+  display:block;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.sliderContainer {
+  display: block;
+  white-space: nowrap;
+}
+
+.item {
+  /*background-color: lightgray;*/ 
+  width: 338px;
+  height: 70vh;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+
+
+.photo {
+  border: solid 3px red;
+  height: 50vh;
+  
+}
+
+.description {
+  border: solid 3px red;
+  height: 15vh;
+}
+
+.memberName {
+  text-align: center;
+}
+
+.returnButton {
+  margin-top: 0.5rem;
+  margin-left: 20rem;
+  width: 35px;
+  height: 35px;
+  background-color:#865FB7 ;
+  border-radius: 50%;
+  border: solid 3px white;
+}
+
+.memberPhoto {
+  height: 50vh;
+  width: 88.5vw;
+}
+
+
+
+
