@@ -45,14 +45,6 @@ main{
   text-align : center;
 }
 
-footer {
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
 .imgHome{
   width: 100%;
   height: 50%;
@@ -91,4 +83,68 @@ button{
 
 .buttonClick{
   box-shadow: none;
+}
+
+
+footer {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RULES PAGE */
+
+.titleRules{
+  font-size: 35px;
+  margin : 5%; 
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px ##c03aae;
+  }   
+}
+
+.rules{
+  text-align: justify;
+  margin : 5%;
+}
+
+.pIntro{
+  font-size: 25px;
+}
+
+
+.pStock{
+  font-size: 25px;
+}
+
+
+.pFin{
+  font-size: 25px;
+}
+
+.challenger{
+  font-size: 25px;
+}
+
+.fight{
+  font-size: 25px;
+}
+.fight a{
+  text-decoration: none;
+  color: white;
+}
+.fight a:visited{
+  color: white;
 }
