@@ -12,7 +12,7 @@ body {
   flex-direction: column;
 }
 
-main {
+nav, main {
   flex-grow: 1;
 }
 
@@ -75,10 +75,12 @@ footer {
   height: 35%;
 }
 
-button{
+.button{
   width :50%; 
   height : 15%;
-  font-size : 1.5rem;
+  padding-top : .6rem;
+  font-size : 1.2rem;
+  text-align : center;
   border-radius: 30%;
   background-color: #865FB7;
   color: white;
