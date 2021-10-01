@@ -1,0 +1,21 @@
+/* CSS POUR LE DESKTOP */
+
+@media screen and (min-width: 500px) {
+    .horizontalSlider {
+      display: flex;
+      overflow-x:auto;
+    }
+  
+    
+  
+    .sliderContainer {
+      display: flex;
+  
+    }
+  
+    .h2img {
+      width: 5vw;
+    }
+    
+  
+  }

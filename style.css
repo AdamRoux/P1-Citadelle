@@ -130,36 +130,46 @@ footer {
   
 }
 
-
-
 .photo {
-  border: solid 3px red;
+ /* border: solid 3px red;*/
   height: 50vh;
 
 }
 
 .description {
   white-space: normal;
-  border: solid 3px red;
-  height: 15vh;
-  text-align: justify;
-}
-
-.memberName {
+  /*border: solid 3px red;*/
+  height: 10vh;
   text-align: center;
 }
 
+.memberContact {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.memberName {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
 .returnButton {
-  
-  
   margin-left: 85%;
   width: 35px;
   height: 35px;
   background-color:#865FB7 ;
   border-radius: 50%;
   border: solid 3px white;
-  background-image: url('img/small-arrow2.png');
-  background-size: cover;
+  
+  
+}
+#backwardShuttle {
+  transform: rotate(180deg);
 }
 
 .memberPhoto {
