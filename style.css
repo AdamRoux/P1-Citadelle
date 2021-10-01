@@ -97,9 +97,17 @@ footer {
 
 
 .creditsTitle {
-  
-  text-align: center;
-  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+
+.h2img {
+  height: 5vh;
+  width: 10vw;
 }
 
 .horizontalSlider {
@@ -115,10 +123,9 @@ footer {
 
 .item {
   /*background-color: lightgray;*/ 
-  width: 338px;
+  width: 100%;
   height: 70vh;
   display: inline-block;
-  margin-left: 10px;
   margin-right: 10px;
   
 }
@@ -128,12 +135,14 @@ footer {
 .photo {
   border: solid 3px red;
   height: 50vh;
-  
+
 }
 
 .description {
+  white-space: normal;
   border: solid 3px red;
   height: 15vh;
+  text-align: justify;
 }
 
 .memberName {
@@ -141,18 +150,22 @@ footer {
 }
 
 .returnButton {
-  margin-top: 0.5rem;
-  margin-left: 20rem;
+  
+  
+  margin-left: 85%;
   width: 35px;
   height: 35px;
   background-color:#865FB7 ;
   border-radius: 50%;
   border: solid 3px white;
+  background-image: url('img/small-arrow2.png');
+  background-size: cover;
 }
 
 .memberPhoto {
   height: 50vh;
-  width: 88.5vw;
+  width: 100%;
+  
 }
 
 
