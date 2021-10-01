@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px){
+    @-webkit-keyframes titleUp {
+        from {
+       top : 35%;
+      }
+      
+      to {
+       top : 0%;
+        }
+      }

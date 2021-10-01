@@ -124,11 +124,13 @@ footer {
 
 to {
  top : 0%;
-}
+  }
 }
 
+
 .rules{
-  text-align: justify;
+  text-align: left;
+  font-size: 25px;
   margin : 5%;
   padding: 3%;
   border : 2px solid white;
@@ -145,35 +147,34 @@ color: rgb(255, 255, 255, 0);
   to {
 color: rgb(255, 255, 255, 1);
   }
-
 }
 
-.pIntro{
-  font-size: 25px;
+ .curseur{ 
+ -webkit-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+  -moz-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+  animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
 }
 
-
-.pStock{
-  font-size: 25px;
+@-webkit-keyframes glowcurseur {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+    
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
+    
+  }
 }
 
-
-.pEnd{
-  font-size: 25px;
-}
-
-.challenger{
-  font-size: 25px;
-}
-
-.fight{
-  font-size: 25px;
-}
-.fight a{
+a {
   text-decoration: none;
   color: white;
 }
-.fight a:visited{
+
+a:visited{
   color: white;
 }
 
@@ -184,3 +185,4 @@ color: rgb(255, 255, 255, 1);
   margin-top: 10%;
   align-items: center;
 }
+  
