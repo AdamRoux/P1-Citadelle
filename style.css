@@ -116,6 +116,7 @@ footer {
   overflow-x: scroll;
 }
 
+  
 .sliderContainer {
   display: block;
   white-space: nowrap;
@@ -170,6 +171,11 @@ footer {
 }
 #backwardShuttle {
   transform: rotate(180deg);
+}
+
+#imgBenjamin {
+  width: 75%;
+  height: 45vh;
 }
 
 .memberPhoto {
