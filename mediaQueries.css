@@ -11,14 +11,13 @@
 
     .separator{
         visibility: hidden;
+        margin-top : -50%;
       }
 
      .buttonContainer{
         width: 40%;
         height: 50%;
-        position: absolute;
-        top : 40%;
-        left : 5%;
+        margin-top : -50vh;
     }
 
     .button{
