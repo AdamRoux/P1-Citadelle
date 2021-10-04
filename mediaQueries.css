@@ -149,4 +149,9 @@
   .fireButton{
     width: 20%;
   }
+
+  /* VICTORY GAME OVER */
+  .victoryContainer{
+    margin : 0 auto;
+  }
 }

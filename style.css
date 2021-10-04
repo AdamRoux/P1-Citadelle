@@ -200,3 +200,9 @@ footer {
   height: 35%;
 }
 
+
+/* VICTORY GAME OVER */
+.victoryImg{
+  height: 30vh;
+  border-radius: 50%;
+}
