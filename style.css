@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   font-size: 1em;
-  background: url("img/nightSky.jpg") ;
+  background: url("img/nightSky.jpg");
+  background-size: cover;
   color: white;
 }
 
@@ -32,9 +33,7 @@ header {
 
 .shuttle{
   width : 12%;
-  height: 55%;
-  background: url('img/space-shuttle.png');
-  background-size: cover;
+  height: auto;
 }
 
 .left{
@@ -53,6 +52,7 @@ footer {
 }
 
 
+/* HOME PAGE */
 .imgHome{
   width: 100%;
   height: 50%;
@@ -95,3 +95,108 @@ footer {
 .buttonClick{
   box-shadow: none;
 }
+
+
+/* GAME PAGE */
+.mainView{
+  width: 100%;
+  height: 35vh;
+}
+
+.player, .bot{
+  display: flex;
+  flex-direction: column;
+}
+
+.bot{
+  align-items: flex-end;
+}
+
+.stock{
+  min-width: 200px;
+  width: 40%;
+  margin : .5rem 0 1rem 0;
+  padding : .3rem;
+  background-color: darkslateblue;
+  border-bottom-right-radius: 20%;
+}
+
+.stockBot{
+  margin : 1vh 0 .5vh 0;
+  border-top-left-radius: 20%;
+}
+
+.shuttleHeartContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.botContainer{
+  justify-content: flex-end;
+}
+
+.shuttleGame{
+  width : 10vh;
+  height: auto;
+  background: url('img/space-shuttle.png');
+  background-size: cover;
+}
+
+.shuttlePlayer{
+  transform: rotate(25deg);
+  margin-left : 1vh;
+}
+
+.shuttleBot{
+  transform: rotate(-160deg);
+  margin-right : 1vh;
+}
+
+.lifeBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 3vh;
+  margin : 0 1vh;
+}
+
+.heart{
+  box-sizing: border-box;
+}
+
+.historicContainer{
+  width: 95%;
+  height: 25vh;
+  margin: 1rem auto;
+  background-color: lightslategrey;
+  border: 5px solid darkslateblue;
+}
+
+.inputGame{
+  display: flex;
+  justify-content: center;
+  background-color: darkslateblue;
+  margin-bottom: 1rem;
+}
+
+.labelInputGame{
+  padding : .3rem;
+}
+
+.inputMissiles{
+  width:40%;
+  margin-right: .3rem;
+}
+
+.buttonDisable{
+  height: 35%;
+  background-color: grey;
+  color : darkgray;
+  border-color: darkgrey;
+}
+
+.fireButton{
+  height: 35%;
+}
+

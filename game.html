@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gamePage</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="mediaQueries.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="img/spaceShuttle.png" class="shuttle"/>
+        <a href="index.html">
+            <p>CITADELLE</p>
+        </a>
+        <img src="img/spaceShuttle.png" class="shuttle left"/>
+    </header>
+
+    <main>
+        <div class="mainView">
+            <div class="player">
+                <div class="stock">Stock : 100</div>
+                <div class="shuttleHeartContainer">
+                    <div class="lifeBar">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartPlayer1">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartPlayer2">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartPlayer3">
+                    </div>
+                    <img src="img/spaceShuttle.png" alt="shuttle Player" class="shuttleGame shuttlePlayer">
+                </div>
+            </div>
+            <div class="bot">
+                <div class="shuttleHeartContainer botContainer">
+                    <img src="img/spaceShuttle.png" alt="shuttle Player" class="shuttleGame shuttleBot">
+                    <div class="lifeBar">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartBot1">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartBot2">
+                        <img src="img/heart(full).png" alt="heart full" class="heart heartBot3">
+                    </div>
+                </div>
+                <div class="stock stockBot">Stock : 100</div>
+            </div>
+        </div>
+        <div class="historicContainer">
+        </div>
+
+        <div class="playerInput">
+            <div class="inputGame">
+                <label for="missiles" class="labelInputGame">Entrer le nombre de missiles à envoyer :</label>
+                <input type="number" min="0" max="100" name="missiles" value="0" class="inputMissiles">
+            </div>
+            <button class="button fireButton buttonDisable">FIRE !!!</button>
+        </div>
+    </main>
+
+    <footer>
+        Citadelle 2021 ©
+    </footer>
+    
+</body>
+</html>
