@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   font-size: 1em;
-  background: url("img/night_sky.jpg") ;
+  background: url("img/nightSky.jpg");
+  background-size: cover;
   color: white;
 }
 
@@ -12,7 +13,7 @@ body {
   flex-direction: column;
 }
 
-main {
+nav, main {
   flex-grow: 1;
 }
 
@@ -32,9 +33,7 @@ header {
 
 .shuttle{
   width : 12%;
-  height: 55%;
-  background: url('/img/space-shuttle.png'); 
-  background-size: cover;
+  height: auto;
 }
 
 .left{
@@ -44,6 +43,21 @@ header {
  /* main{
   text-align : center;
 } */
+
+
+
+
+footer {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* HOME PAGE */
+
 
 .imgHome{
   width: 100%;
@@ -55,7 +69,7 @@ header {
 .separator{
   width: 100%;
   position: relative;
-  top: -4%;
+  top: -5vh;
 }
 
 .buttonContainer{
@@ -64,13 +78,18 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 35%;
+  height: 30%;
 }
 
- button{
+
+.button{
+
   width :50%; 
+  min-width: 200px;
   height : 15%;
-  font-size : 1.5rem;
+  padding-top : .3rem;
+  font-size : 2.5vh;
+  text-align : center;
   border-radius: 30%;
   background-color: #865FB7;
   color: white;
@@ -86,12 +105,7 @@ header {
 }
 
 
-footer {
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 /* CSS POUR LA CREDIT PAGE */
 
@@ -187,3 +201,207 @@ footer {
 
 
 
+
+/* GAME PAGE */
+.mainView{
+  width: 100%;
+  height: 35vh;
+}
+
+.player, .bot{
+  display: flex;
+  flex-direction: column;
+}
+
+.bot{
+  align-items: flex-end;
+}
+
+.stock{
+  min-width: 200px;
+  width: 40%;
+  margin : .5rem 0 1rem 0;
+  padding : .3rem;
+  background-color: darkslateblue;
+  border-bottom-right-radius: 20%;
+}
+
+.stockBot{
+  margin : 1vh 0 .5vh 0;
+  border-top-left-radius: 20%;
+}
+
+.shuttleHeartContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.botContainer{
+  justify-content: flex-end;
+}
+
+.shuttleGame{
+  width : 10vh;
+  height: auto;
+  background: url('img/space-shuttle.png');
+  background-size: cover;
+}
+
+.shuttlePlayer{
+  transform: rotate(25deg);
+  margin-left : 1vh;
+}
+
+.shuttleBot{
+  transform: rotate(-160deg);
+  margin-right : 1vh;
+}
+
+.lifeBar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 3vh;
+  margin : 0 1vh;
+}
+
+.heart{
+  box-sizing: border-box;
+}
+
+.historicContainer{
+  width: 95%;
+  height: 25vh;
+  margin: 1rem auto;
+  background-color: lightslategrey;
+  border: 5px solid darkslateblue;
+}
+
+.inputGame{
+  display: flex;
+  justify-content: center;
+  background-color: darkslateblue;
+  margin-bottom: 1rem;
+}
+
+.labelInputGame{
+  padding : .3rem;
+}
+
+.inputMissiles{
+  width:40%;
+  margin-right: .3rem;
+}
+
+.buttonDisable{
+  height: 35%;
+  background-color: grey;
+  color : darkgray;
+  border-color: darkgrey;
+}
+
+.fireButton{
+  height: 35%;
+}
+
+footer {
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RULES PAGE */
+
+.titleRules{
+  position : relative;
+  font-size: 35px;
+  margin : 5%; 
+  -webkit-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
+  -moz-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
+  animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
+}
+
+@-webkit-keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+    
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
+    
+  }
+}
+@-webkit-keyframes titleUp {
+  from {
+ top : 40%;
+}
+
+to {
+ top : 0%;
+  }
+}
+
+
+.rules{
+  text-align: left;
+  font-size: 25px;
+  margin : 5%;
+  padding: 3%;
+  border : 2px solid white;
+  border-radius: 20px;
+  -webkit-animation: colorChange 1s linear 2s both;
+  -moz-animation: colorChange 1s linear 2s both;
+  animation: colorChange 1s linear 2s both;
+}
+
+@-webkit-keyframes colorChange {
+  from {
+color: rgb(255, 255, 255, 0);
+  }
+  to {
+color: rgb(255, 255, 255, 1);
+  }
+}
+
+ .curseur{ 
+ -webkit-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+  -moz-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+  animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+}
+
+@-webkit-keyframes glowcurseur {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+    
+  }
+  
+  to {
+     color: gray;
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
+    
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited{
+  color: white;
+}
+
+.buttonRow{
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  margin-top: 10%;
+  align-items: center;
+}
+  
