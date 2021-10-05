@@ -1,8 +1,8 @@
 html,
 body {
   height: 100%;
-  font-size: 1em;
-  background: url("img/nightSky.jpg");
+  font-size: 2vh;
+  background: url("../img/nightSky.jpg");
   background-size: cover;
   color: white;
 }
@@ -15,6 +15,7 @@ body {
 
 nav, main {
   flex-grow: 1;
+  text-align: center;
 }
 
 header,
@@ -40,14 +41,21 @@ header {
   transform: rotate(180deg);
 }
 
-main{
-  text-align : center;
+
+footer {
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+
+
+/* HOME PAGE -------------------------------*/
 .imgHome{
   width: 100%;
   height: 50%;
-  background: url("img/shuttle.jpg");
+  background: url("../img/shuttle.jpg");
   background-size: cover;
 }
 
@@ -67,6 +75,7 @@ main{
 }
 
 .button{
+
   width :50%; 
   min-width: 200px;
   height : 15%;
@@ -80,15 +89,14 @@ main{
   border-left: 5px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  box-shadow: 0px 10px 5px black;
-}
+  box-shadow: 0px 10px 5px black; 
+} 
 
 .buttonClick{
   box-shadow: none;
 }
 
-
-/* GAME PAGE */
+/* GAME PAGE  ----------------------------------*/
 .mainView{
   width: 100%;
   height: 35vh;
@@ -130,7 +138,7 @@ main{
 .shuttleGame{
   width : 10vh;
   height: auto;
-  background: url('img/space-shuttle.png');
+  background: url('../img/space-shuttle.png');
   background-size: cover;
 }
 
@@ -191,61 +199,29 @@ main{
   height: 35%;
 }
 
-footer {
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-/* RULES PAGE */
-
-.titleRules{
-  position : relative;
-  font-size: 35px;
-  margin : 5%; 
-  -webkit-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
-  -moz-animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
-  animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both;
-}
-
-@-webkit-keyframes glow {
-     from {
-      color: #fff;
-    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
-    
-  }
-  
-  to {
-     color: gray;
-    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
-    
-  }
-}
-@-webkit-keyframes titleUp {
+/* RULES PAGE --------------------------------------*/
+@keyframes glow {
   from {
- top : 40%;
-}
-
-to {
- top : 0%;
+    color: #fff;
+    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+  }
+  to {
+    color: gray;
+    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
   }
 }
 
-
-.rules{
-  text-align: left;
-  font-size: 25px;
-  margin : 5%;
-  padding: 3%;
-  border : 2px solid white;
-  border-radius: 20px;
-  -webkit-animation: colorChange 1s linear 2s both;
-  -moz-animation: colorChange 1s linear 2s both;
-  animation: colorChange 1s linear 2s both;
+@keyframes titleUp {
+  from {
+    top : 40%;
+  }
+  to {
+    top : 0%;
+  }
 }
 
-@-webkit-keyframes colorChange {
+@keyframes colorChange {
   from {
 color: rgb(255, 255, 255, 0);
   }
@@ -254,24 +230,25 @@ color: rgb(255, 255, 255, 1);
   }
 }
 
- .curseur{ 
- -webkit-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
-  -moz-animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
-  animation: glowcurseur 2s ease-in-out infinite alternate, colorChange 1s linear 2s both;
+.titleRules{
+  position : relative;
+  font-size: 35px;
+  margin : 5%; 
+  animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both; 
 }
 
-@-webkit-keyframes glowcurseur {
-     from {
-      color: #fff;
-    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
-    
-  }
-  
-  to {
-     color: gray;
-    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
-    
-  }
+.rules{
+  text-align: left;
+  font-size: 2.3vh;
+  margin : 3vh;
+  padding: 2vh;
+  border : 2px solid white;
+  border-radius: 20px;
+  animation: colorChange 1s linear 2s both;
+}
+
+ .curseur{ 
+  animation: colorChange 600ms ease-in-out infinite alternate;
 }
 
 a {
@@ -284,10 +261,65 @@ a:visited{
 }
 
 .buttonRow{
-  display: flex;
-  flex-direction: row;
-  margin: 5%;
   margin-top: 10%;
-  align-items: center;
+  text-align: center;
 }
   
+
+/*CREDIT PAGE---------------------------------- */
+.creditsTitle {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.horizontalSlider {
+  display:block;
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.item {
+  width: 100%;
+  height: 70vh;
+  display: inline-block;
+  text-align: center;
+}
+
+.adam{
+  margin: 0vh 3vh;
+}
+
+.memberPhoto {
+  height: 50vh;
+  width: 100%;
+}
+
+.memberContact {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.memberName {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+
+.description {
+  white-space: normal;
+  height: 10vh;
+  text-align: center;
+}
+
+.imgBenjamin {
+  width: 75%;
+  height: auto;
+  margin-bottom : 4vh;
+}
