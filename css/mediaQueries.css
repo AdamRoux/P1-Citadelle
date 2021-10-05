@@ -66,8 +66,12 @@
       transform: rotate(-180deg);
   }
 
+  .heart{
+    box-sizing: border-box;
+  }
+  
   .lifeBar{
-    width: 6%;
+    width: 5vh;
   }
 
   .historicContainer{
