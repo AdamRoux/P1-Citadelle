@@ -1,4 +1,5 @@
 @media screen and (min-width: 500px){
+<<<<<<< HEAD
   /* HOME PAGE */
   .imgHome{
       height: 100%;
@@ -150,3 +151,14 @@
     width: 20%;
   }
 }
+=======
+    @-webkit-keyframes titleUp {
+        from {
+       top : 35%;
+      }
+      
+      to {
+       top : 0%;
+        }
+      }
+>>>>>>> rulesPage

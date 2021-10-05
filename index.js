@@ -1,2 +1,3 @@
-const firstName = 'John';
-console.log(firstName);
+// input remis à zéro
+input type="reset"
+
