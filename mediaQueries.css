@@ -22,62 +22,6 @@
 
   /* GAME PAGE*/
   .mainView{
-      height: 50%;
-      font-size : 1.3rem;
-      display: flex;
-  }
-
-  .shuttleHeartContainer{
-      justify-content: center;
-  }
-
-  .botContainer{
-      margin-top : 18%;
-  }
-
-  .shuttlePlayer{
-      transform: none;
-  }
-    
-  .shuttleBot{
-      transform: rotate(-180deg);
-  }
-
-  .lifeBar{
-    width: 6%;
-  }
-
-  .historicContainer{
-    width: 40%;
-    height: 30%;
-    margin: 3rem auto;
-    float: right;
-  }
-
-  .playerInput{
-    margin-top : 3rem;
-  }
-
-  .inputGame{
-    padding : 1rem 3rem;
-  }
-  
-  .inputMissiles{
-    margin-left : 2rem;
-    width:20%;
-  }
-  
-  .fireButton{
-    width: 20%;
-  }
-
-  .shuttle{
-      width: 4.5%;
-      height: auto;
-  }
-
-  /* GAME PAGE*/
-  .mainView{
       height: 40vh;
       font-size : 1.3rem;
       display: flex;

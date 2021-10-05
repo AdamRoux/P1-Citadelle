@@ -69,9 +69,8 @@ main{
 .button{
   width :50%; 
   min-width: 200px;
-  height : 15%;
-  padding-top : .3rem;
   font-size : 2.5vh;
+  padding : .3rem 0;
   text-align : center;
   border-radius: 30%;
   background-color: #865FB7;
@@ -80,13 +79,14 @@ main{
   border-left: 5px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
-  box-shadow: 0px 10px 5px black;
-}
-
-.buttonClick{
   box-shadow: none;
+  transition: font-size 300ms, box-shadow 200s;
 }
 
+.button:hover{
+  box-shadow: 0px 10px 5px black;
+  font-size : 3vh;
+}
 
 /* GAME PAGE */
 .mainView{
