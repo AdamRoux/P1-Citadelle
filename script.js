@@ -3,7 +3,7 @@ let stockBot = 100;
 let divStockPlayer = document.querySelector('.stockPlayer')
 let divStockBot = document.querySelector('.stockBot')
 let randomBotStake = missilesNumberBot(stockBot);
-
+ 
 
 const historicDiv = document.querySelector('.historicContainer')
 
