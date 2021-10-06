@@ -13,7 +13,8 @@
   .buttonContainer{
     width: 40%;
     height: 50%;
-    margin-top : -50vh;
+    position: fixed;
+    top : 40%;
   }
 
   .button{
@@ -106,11 +107,15 @@
 /*RULES PAGE ------------------------------*/
 @keyframes titleUp {
   from {
-    top : 35%;
+    top : 30%;
   }
   to {
     top : 0%;
   }
+}
+
+.fight{
+  width: 15%;
 }
 
 
@@ -122,6 +127,5 @@
 
   .sliderContainer {
     display: flex;
-
   }
 }
