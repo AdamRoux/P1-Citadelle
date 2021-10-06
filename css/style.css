@@ -79,9 +79,8 @@ footer {
 
   width :50%; 
   min-width: 200px;
-  height : 15%;
-  padding-top : .3rem;
   font-size : 2.5vh;
+  padding : .3rem 0;
   text-align : center;
   border-radius: 30%;
   background-color: #865FB7;
@@ -95,6 +94,7 @@ footer {
 
 .buttonClick{
   box-shadow: none;
+  transition: font-size 300ms, box-shadow 200s;
 }
 
 /* GAME PAGE  ----------------------------------*/
