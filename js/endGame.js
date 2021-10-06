@@ -1,6 +1,6 @@
 import {
     result,
-} from './js/index.js'
+} from './index.js'
 
 document.querySelector("h1").innerHTML= result;
 console.log (result);
