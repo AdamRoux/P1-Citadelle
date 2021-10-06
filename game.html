@@ -11,14 +11,16 @@
 <body>
     <header>
         <img src="img/spaceShuttle.png" class="shuttle"/>
-        <p>CITADELLE</p>
+        <a href="index.html">
+            <p>CITADELLE</p>
+        </a>
         <img src="img/spaceShuttle.png" class="shuttle left"/>
     </header>
 
     <main>
         <div class="mainView">
             <div class="player">
-                <div class="stock">Stock : 100</div>
+                <div class="stock stockPlayer">Stock : 100</div>
                 <div class="shuttleHeartContainer">
                     <div class="lifeBar">
                         <img src="img/heart(full).png" alt="heart full" class="heart heartPlayer1">
@@ -46,15 +48,17 @@
         <div class="playerInput">
             <div class="inputGame">
                 <label for="missiles" class="labelInputGame">Entrer le nombre de missiles à envoyer :</label>
-                <input type="number" min="0" max="100" name="missiles" value="0" class="inputMissiles">
+                <input type="number" min="0" max="100" name="missiles" class="inputMissiles">
             </div>
-            <button class="button fireButton ">FIRE !!!</button>
+            <button class="button fireButton">FIRE !!!</button>
         </div>
     </main>
 
     <footer>
         Citadelle 2021 ©
     </footer>
+
+    <script src="script.js"></script>
     
 </body>
 </html>

@@ -1,15 +1,15 @@
-const playerMissiles = document.querySelector('.inputMissiles').value;
-const historicDiv = document.querySelector('.historicContainer')
-const winningPhrase = `Vous avez envoyé ${playerMissiles} missiles. Bot a tiré ${/*botMissiles*/} missiles. Vous avez gagné `;
-const losingPhrase = `Vous avez envoyé ${playerMissiles} missiles. Bot a tiré ${/*botMissiles*/} missiles. Vous avez perdu `;
-const drawPhrase = `Vous avez envoyé ${playerMissiles} missiles. Bot a tiré ${/*botMissiles*/} missiles. La manche doit être rejoué `;
-let playerLife = 3
-let botLife = 3
-
 let stockPlayer = 100;
 let stockBot = 100;
+let divStockPlayer = document.querySelector('.stockPlayer')
+let divStockBot = document.querySelector('.stockBot')
+let randomBotStake = missilesNumberBot(stockBot);
 
 
+const historicDiv = document.querySelector('.historicContainer')
+
+let playerLife = 3
+let botLife = 3
+ 
 
 //RECUPERATION DU NOMBRE DE MISSILE DU JOUEUR
 function recoverMissilePlayer(){
@@ -17,10 +17,10 @@ function recoverMissilePlayer(){
     return parseInt(inputValue.value);
 }
 
-
 //RANDOMISATION DU NOMBRE DE MISSILES DU BOT
 function missilesNumberBot(stockBot){
     return Math.floor(Math.random() * stockBot);
+    
 };
 
 
@@ -28,24 +28,86 @@ function missilesNumberBot(stockBot){
 //LORSQUE L'ON CLIQUE SUR LE BOUTON FIRE => CHECK DE LA VALEUR DE L'INPUT SELON 3 CONDITIONS
 const fireButton = document.querySelector(".fireButton");
 
-fireButton.addEventListener("mouseover", function(){
-    console.log("boutton")
+fireButton.addEventListener("click", function(){
+
     if (typeof (recoverMissilePlayer()) === 'number' && recoverMissilePlayer() >= 0 && recoverMissilePlayer() <= 100){
-        console.log('Lancer la fonction de comparaison')
-        console.log(`Mise du joueur : ${recoverMissilePlayer()}`);
-        console.log(`Mise du bot : ${missilesNumberBot(stockBot)}`);
+        if (recoverMissilePlayer() > randomBotStake)
+    
+        {   
+            
+            const winningPhrase = `Vous avez envoyé ${recoverMissilePlayer()} missiles. Bot a tiré ${randomBotStake} missiles.<br/> Vous avez gagné. <br/> `;
+            historicDiv.innerHTML += winningPhrase
+            switch(botLife) {
+                case 3: botHeart3 = document.querySelector('.heartBot3')
+                botHeart3.src = 'img/heart.png'; break;
+                case 2: botHeart2 = document.querySelector('.heartBot2')
+                botHeart2.src = 'img/heart.png'; break;
+                case 1: botHeart1 = document.querySelector('.heartBot1')
+                botHeart1.src = 'img/heart.png'; break;
+                
+            }
+            botLife--
+            console.log(`Nombre de vie du Bot : ${botLife}`)
+            
+
+            
+        }
+    else if (randomBotStake > recoverMissilePlayer() ) {
+            
+            const losingPhrase = `Vous avez envoyé ${recoverMissilePlayer()} missiles. Bot a tiré ${randomBotStake} missiles.<br/> Vous avez perdu. <br/> `;
+            historicDiv.innerHTML += losingPhrase
+            switch(playerLife) {
+                case 3: playerHeart3 = document.querySelector('.heartPlayer3')
+                playerHeart3.src = 'img/heart.png'; break;
+                case 2: playerHeart2 = document.querySelector('.heartPlayer2')
+                playerHeart2.src = 'img/heart.png'; break;
+                case 1: playerHeart1 = document.querySelector('.heartPlayer1')
+                playerHeart1.src = 'img/heart.png'; break;
+
+            }
+            playerLife--
+            console.log(`Nombre de vie du Joueur : ${playerLife}`)
+            
+            
+    }
+    if (recoverMissilePlayer() === randomBotStake ) {
+        const drawPhrase = `Vous avez envoyé ${recoverMissilePlayer()} missiles. Bot a tiré ${randomBotStake} missiles.<br/> La manche doit être rejoué. <br/> `;
+        historicDiv.innerHTML += drawPhrase
+        
+        
+
+    }
+    stockBot -= randomBotStake;
+    
+    stockPlayer -= recoverMissilePlayer();
+    divStockBot.innerHTML = `Stock : ${stockBot}`
+    divStockPlayer.innerHTML = `Stock : ${stockPlayer}`
+    randomBotStake = missilesNumberBot(stockBot)
+    
+
     } else {
         console.log("error");
+        historicDiv.innerHTML += `Erreur : mise possible entre 0 et 100. <br/>`
+
     }  
+
+    
+   
+   
 });
 
-console.log(playerMissiles)
+
+
+
+
 
 // FONCTION COMPARE //
 
-function compare() {
+/*fireButton.addEventListener('click', compare());*/
+/*function compare() {
+    
 
-    if (  > /*mettre la fonction du nmbre de missile du bot*/ )
+    if (recoverMissilePlayer() > missilesNumberBot(stockBot))
         {
             historicDiv.innerHTML += winningPhrase
             switch(botLife) {
@@ -60,7 +122,7 @@ function compare() {
             botLife--
             
         }
-    else if (playerMissiles < /*botMissiles*/ ) {
+    else if (missilesNumberBot(stockBot) > recoverMissilePlayer() ) {
             historicDiv.innerHTML += losingPhrase
             switch(playerLife) {
                 case 3: playerHeart3 = document.querySelector('.heartPlayer3')
@@ -75,10 +137,15 @@ function compare() {
             
     }
     
-    if (playerMissiles === /*bot missiles*/) {
+    if (recoverMissilePlayer() === missilesNumberBot(stockBot) ) {
             historicDiv.innerHTML += drawPhrase
 
     }
-    stockBot = (stockBot - missilesNumberBot());
-    stockPlayer = (stockPlayer - playerMissiles);
+    stockBot -= missilesNumberBot(stockBot);
+    stockPlayer -= recoverMissilePlayer();
+    /*divStockBot.innerHTML = `Stock : ${stockBot}`
+    divStockPlayer.innerHTML = `Stock : ${stock}`
 }
+
+*/
+
