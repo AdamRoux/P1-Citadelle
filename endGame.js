@@ -1,13 +1,14 @@
-const endGame = require("./index");
+import {
+    result,
+} from './js/index.js'
 
+document.querySelector("h1").innerHTML= result;
+console.log (result);
 
-document.querySelector("h1").innerHTML= endGame.result;
-console.log (endGame.result );
-
-if (endGame.result = "Game over"){
-    document.querySelector(".victoryImg").src = "/img/defeat.gif"; 
-}else if (endGame.result = "Victoire"){
+if (result == "Victoire"){
     document.querySelector(".victoryImg").src = "/img/victory.gif"; 
+}else if (result == "Game over"){
+    document.querySelector(".victoryImg").src = "/img/defeat.gif"; 
 }else{
-    document.querySelector(".victoryImg").src = "spaceShuttle.jpg"; 
+    document.querySelector(".victoryImg").src = "img/spaceShuttle.png"; 
 }
