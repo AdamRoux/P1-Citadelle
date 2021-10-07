@@ -16,7 +16,7 @@
     animation: colorBoard 2s ease-in-out 3.5s both;
     border :none;
     border-radius: 15px;
-    padding : 1vh 9vh;
+    padding : 1vh 3vh;
     margin : 0;
     text-align: justify;
 }
@@ -42,6 +42,24 @@
     }
     to{
         top: 0;
-        height: 55%;
+        height: 62%;
     }
 }
+
+
+@media screen and (min-width: 500px){
+    @keyframes openBoard {
+        from{
+            height : 20%;
+            top: 9%;
+        }
+        to{
+            top: 0;
+            height: 40%;
+        }
+    }
+
+    .buttonRow{
+        margin-top : 1vh;
+    }
+};
