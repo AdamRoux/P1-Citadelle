@@ -209,11 +209,11 @@ footer {
 @keyframes glow {
   from {
     color: #fff;
-    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
+    text-shadow: 0 0 10px rgb( 19, 208, 102), 0 0 20px rgb( 19, 208, 102), 0 0 30px rgb( 19, 208, 102), 0 0 40px rgb( 19, 208, 102), 0 0 50px rgb( 19, 208, 102), 0 0 60px rgb( 19, 208, 102), 0 0 70px rgb( 19, 208, 102), 0 0 90px rgb( 19, 208, 102);
   }
   to {
     color: gray;
-    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
+    text-shadow: 0 0 20px rgb( 19, 208, 102), 0 0 30px rgb( 19, 208, 102), 0 0 40px rgb( 19, 208, 102), 0 0 50px rgb( 19, 208, 102), 0 0 60px rgb( 19, 208, 102), 0 0 70px rgb( 19, 208, 102), 0 0 80px rgb( 19, 208, 102), 0 1 90px rgb( 19, 208, 102);
   }
 }
 
@@ -249,11 +249,11 @@ color: rgb(255, 255, 255, 1);
   padding: 1.5vh;
   border : 2px solid white;
   border-radius: 20px;
-  animation: colorChange 1s linear 2s both;
+  /* animation: colorChange 1s linear 2s both; */
 }
 
  .curseur{ 
-  animation: colorChange 600ms ease-in-out infinite alternate;
+  /* animation: colorChange 600ms ease-in-out infinite alternate; */
 }
 
 a {

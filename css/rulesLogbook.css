@@ -1,0 +1,47 @@
+.titleRules{
+    z-index: 1;
+}
+
+.rulesContainer{
+    margin : 1vh;
+    background: url("../img/tvScramble.gif");
+    background-size: contain;
+    border-radius: 20px;
+    border : 5px ridge rgb( 19, 208, 102);
+    animation: openBoard 1.5s ease-in-out 2s both;
+    position : relative;
+}
+
+.rules{
+    animation: colorBoard 2s ease-in-out 3.5s both;
+    border :none;
+    border-radius: 15px;
+    padding : 1vh 9vh;
+    margin : 0;
+    text-align: justify;
+}
+
+.curseur{
+    animation:colorBoard 600ms ease-in-out 3.5s infinite alternate;
+}
+
+@keyframes colorBoard {
+    from{
+        color: rgb(0, 255, 0, 0);
+    }
+    to{
+        color: rgb( 19, 208, 102);
+        text-shadow: 0px 0px 8px rgb( 19, 208, 102), 0px 0px 10px rgb( 19, 208, 102);
+    }
+}
+
+@keyframes openBoard {
+    from{
+        height : 20%;
+        top: 17%;
+    }
+    to{
+        top: 0;
+        height: 55%;
+    }
+}
