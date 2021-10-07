@@ -1,28 +1,29 @@
 // INPUT REMIS A ZERO
 
 document.querySelector(".fireButton").addEventListener("click", function(){
-    console.log(document.querySelector(".inputMissiles").value= 0);
+    document.querySelector(".inputMissiles").value= 0;
 
 });
 
-//CHECK FIN DE PARTIE : SI VIE BOT = 0, SI VIE JOUEUR = 0, SI 2 STOCKS = 0
+// CHECK FIN DE PARTIE : SI VIE BOT = 0, SI VIE JOUEUR = 0, SI 2 STOCKS = 0
 
 let result = ""; 
 
-if (lifePlayer == 0 && lifeBot > 0) {
+if (playerLife == 0 && botLife > 0) {
     result = "Game over";
 
-}else if (lifeBot == 0 && lifePlayer > 0){
+}else if (botLife == 0 && playerLife > 0){
     result = "Victoire";
 
-}else if (((stockPlayer+stockBot) == 0) || ((lifePlayer+lifeBot)==0) ) {
-    if (lifePlayer > lifeBot){
+}else if (((stockPlayer+stockBot) == 0) || ((playerLife+botLife)==0) ) {
+    if (playerLife > botLife){
         result = "Victoire";
-    } else if (lifePlayer < lifeBot){
+    } else if (playerLife < botLife){
         result = "Game over";
     } else{
         result = "Match nul";
     }
+    window.location.href = '../victoryOver.html'
 }
 
 export {

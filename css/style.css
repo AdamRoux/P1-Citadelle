@@ -168,9 +168,13 @@ footer {
 .historicContainer{
   width: 95%;
   height: 25vh;
+  max-height: 25vh;
   margin: 1rem auto;
   background-color: lightslategrey;
   border: 5px solid darkslateblue;
+  overflow: scroll;
+  text-align: left;
+  font-size: 2.5vh;
 }
 
 .inputGame{
@@ -337,4 +341,9 @@ a:visited{
   white-space: normal;
   text-align: center;
   padding : 1vh;
+}
+
+.victoryImg{
+  border-radius: 50%;
+  width: 40vh;
 }

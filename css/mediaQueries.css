@@ -128,4 +128,10 @@
   .sliderContainer {
     display: flex;
   }
+
+  /*VICTORY DEFEAT-------------------------------------------------------------------------------------------------------------*/
+  .victoryContainer{
+    position: static;
+    margin: auto;
+  }
 }
