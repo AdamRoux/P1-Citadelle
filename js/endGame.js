@@ -1,20 +1,17 @@
-// import {
-//     result,
-// } from './script.js'
-
-
 let statut = localStorage.getItem("citadelleStatut");
+let statutImg = document.querySelector(".victoryImg");
 localStorage.setItem("citadelleStatut", "");
 
+//Initialization title and img with the result in script.js code
 document.querySelector("h1").innerHTML= statut;
 
 if (statut == "Victoire"){
-    document.querySelector(".victoryImg").src = "/img/victory.gif"; 
+    statutImg.src = "/img/victory.gif"; 
 }else if (statut == "Game over"){
-    document.querySelector(".victoryImg").src = "/img/defeat.gif"; 
+    statutImg.src = "/img/defeat.gif"; 
 }else if (statut == "Match nul") {
-    document.querySelector(".victoryImg").src = "img/spaceShuttle.png"; 
+    statutImg.src = "img/spaceShuttle.png"; 
 } else {
     document.querySelector("h1").innerHTML= "Dit donc... ça veut tricher ?"
-    document.querySelector(".victoryImg").src = ""; 
+    statutImg.src = ""; 
 }
