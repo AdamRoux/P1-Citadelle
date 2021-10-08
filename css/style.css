@@ -2,7 +2,8 @@ html,
 body {
   height: 100%;
   font-size: 2vh;
-  /* background: url("../img/nightSky.jpg"); */
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.5;
   background-size: cover;
   color: white;
 }
@@ -20,16 +21,19 @@ nav, main {
 
 header,
 footer {
-  background-color: #865FB7;
+  background: linear-gradient(black, #8bbbe9);
   text-align: center;
 }
 
 header {
-    height: 10%;
-    font-size: xx-large;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.headerClickable{
+  width: 100vw;
+  height: 10%;
 }
 
 .shuttle{
@@ -62,7 +66,8 @@ footer {
 .separator{
   width: 100%;
   position: relative;
-  top: -5vh;
+  top: -3.2vh;
+  z-index : 1;
 }
 
 .buttonContainer{
@@ -76,20 +81,21 @@ footer {
 
 
 .button{
-
-  width :50%; 
+  font-family: 'Press Start 2P', cursive;
+  background: linear-gradient(black, #8bbbe9);
+  width :55%; 
   min-width: 200px;
-  font-size : 2.5vh;
-  padding : .3rem 0;
+  font-size : 2vh;
+  padding: 1.3vh 0;
   text-align : center;
   border-radius: 30%;
-  background-color: #865FB7;
   color: white;
   border-right: 5px solid white;
   border-left: 5px solid white;
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   box-shadow: 0px 10px 5px black; 
+  cursor: pointer;
 } 
 
 .buttonClick{
@@ -117,7 +123,7 @@ footer {
   width: 40%;
   margin : .5rem 0 1rem 0;
   padding : .3rem;
-  background-color: darkslateblue;
+  background: linear-gradient(black, #8bbbe9);
   border-bottom-right-radius: 20%;
 }
 
@@ -166,29 +172,32 @@ footer {
 }
 
 .historicContainer{
-  width: 95%;
-  height: 25vh;
+  width: 40vh;
+  height: 23vh;
   max-height: 25vh;
   margin: 1rem auto;
-  background-color: lightslategrey;
+  padding : 1.5vh;
+  background: linear-gradient(black, #8bbbe9);
   border: 5px solid darkslateblue;
   overflow: scroll;
   text-align: left;
-  font-size: 2.5vh;
+  font-size: 1.5vh;
 }
 
 .inputGame{
   display: flex;
   justify-content: center;
-  background-color: darkslateblue;
+  background: linear-gradient(black, #8bbbe9);
   margin-bottom: 1rem;
 }
 
 .labelInputGame{
   padding : .3rem;
+  font-size: 1.5vh;
 }
 
 .inputMissiles{
+  min-width: 50px;
   width:40%;
   margin-right: .3rem;
 }
@@ -285,6 +294,7 @@ a:visited{
   white-space: nowrap;
 }
 
+/*SCROLL BAR DESIGN*/
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
@@ -342,6 +352,7 @@ a:visited{
   white-space: normal;
   text-align: center;
   padding : 1vh;
+  font-size: 1.3vh;
 }
 
 .victoryImg{

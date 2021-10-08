@@ -1,4 +1,5 @@
 .titleRules{
+    font-size: 3vh;
     z-index: 1;
 }
 
@@ -13,6 +14,7 @@
 }
 
 .rules{
+    font-size: 1.6vh;
     animation: colorBoard 2s ease-in-out 3.5s both;
     border :none;
     border-radius: 15px;
@@ -42,16 +44,21 @@
     }
     to{
         top: 0;
-        height: 62%;
+        height: 65%;
     }
 }
 
 
 @media screen and (min-width: 500px){
+
+    .rulesContainer{
+        width: 70%;
+        margin: auto;
+    }
     @keyframes openBoard {
         from{
-            height : 20%;
-            top: 9%;
+            height : 15%;
+            top: 10%;
         }
         to{
             top: 0;

@@ -100,25 +100,26 @@ fireButton.addEventListener("click", () => {
     if ((stockPlayer - recoverMissilePlayer()) < 0) {
       historicDiv.innerHTML += `Erreur : Vous ne pouvez pas miser plus que votre stock. <br/><br/>`;
 
+
     } else {
-       if (recoverMissilePlayer() > randomBotStake) {
-          winningRound();
+      if (recoverMissilePlayer() > randomBotStake) {
+        winningRound();
 
-        } else if (randomBotStake > recoverMissilePlayer()) {
-          looseRound();
+      } else if (randomBotStake > recoverMissilePlayer()) {
+        looseRound();
 
-        } else if (recoverMissilePlayer() === randomBotStake) {
-          equalRound();
-        }
+      } else if (recoverMissilePlayer() === randomBotStake) {
+        equalRound();
+      }
 
-        stockBot -= randomBotStake;
-        stockPlayer -= recoverMissilePlayer();
-        divStockBot.innerHTML = `Stock : ${stockBot}`;
-        divStockPlayer.innerHTML = `Stock : ${stockPlayer}`;
-        randomBotStake = missilesNumberBot(stockBot);
+      stockBot -= randomBotStake;
+      stockPlayer -= recoverMissilePlayer();
+      divStockBot.innerHTML = `Stock : ${stockBot}`;
+      divStockPlayer.innerHTML = `Stock : ${stockPlayer}`;
+      randomBotStake = missilesNumberBot(stockBot);
     }
 
-    document.querySelector(".inputMissiles").value = 0;
+    document.querySelector(".inputMissiles").value = "";
    
 
     if (playerLife == 0 && botLife > 0) {

@@ -1,47 +1,10 @@
-html,
-body {
-  height: 100%;
-  font-size: 2vh;
-  background: url("../img/nightSky.jpg");
-  background-size: cover;
-  color: white;
-  font-family: 'Press Start 2P', cursive;
-  line-height: 1.5;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-nav, main {
- 
-  text-align: center;
-}
-
-header,
-footer {
-  background: linear-gradient(black, #8bbbe9);
-  text-align: center;
-
-}
-
-header {
-    height: 10%;
-  
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .titleP {
   font-size: 4vh;;
   position: relative;
   color: white;
   animation: glitch-skew 0.5s infinite linear alternate-reverse;
-  }
-  .titleP::after {
+}
+.titleP::after {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -51,8 +14,8 @@ header {
   left: -2px;
   text-shadow: -2px 0 #264626, 2px 2px #ff00c1;
   animation: glitch2 1s infinite linear alternate-reverse;
-  }
-  @keyframes glitch {
+}
+@keyframes glitch {
   0% {
   clip: rect(30px, 9999px, 42px, 0);
   transform: skew(0.85deg);
@@ -137,8 +100,9 @@ header {
   clip: rect(58px, 9999px, 66px, 0);
   transform: skew(0.05deg);
   }
-  }
-  @keyframes glitch2 {
+}
+
+@keyframes glitch2 {
   0% {
   clip: rect(66px, 9999px, 28px, 0);
   transform: skew(0.12deg);
@@ -223,8 +187,9 @@ header {
   clip: rect(15px, 9999px, 94px, 0);
   transform: skew(0.76deg);
   }
-  }
-  @keyframes glitch-skew {
+}
+
+@keyframes glitch-skew {
   0% {
   transform: skew(2deg);
   }
@@ -258,327 +223,4 @@ header {
   100% {
   transform: skew(-2deg);
   }
-  }
-
-.shuttle{
-  width : 12%;
-  height: auto;
-}
-
-.left{
-  transform: rotate(180deg);
-}
-
-
-footer {
-  height: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-/* HOME PAGE -------------------------------*/
-.imgHome{
-  width: 100%;
-  height: 50%;
-  background: url("../img/shuttle.jpg");
-  background-size: cover;
-}
-
-.separator{
-  width: 100%;
-  position: relative;
-  top: -5vh;
-}
-
-.buttonContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 30%;
-}
-
-
-.button{
-
-  width :50%; 
-  min-width: 200px;
-  font-size : 2vh;
-  padding : .3rem 0;
-  text-align : center;
-  border-radius: 30%;
-  background: linear-gradient(black, #8bbbe9);
-  color: white;
-  border-right: 5px solid white;
-  border-left: 5px solid white;
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
-  box-shadow: 0px 10px 5px black;
-  font-family: 'Press Start 2P', cursive;
-  
-
-} 
-
-.buttonClick{
-  box-shadow: none;
-  transition: font-size 300ms, box-shadow 200s;
-}
-
-/* GAME PAGE  ----------------------------------*/
-.mainView{
-  width: 100%;
-  height: 35vh;
-}
-
-.player, .bot{
-  display: flex;
-  flex-direction: column;
-}
-
-.bot{
-  align-items: flex-end;
-}
-
-.stock{
-  min-width: 200px;
-  width: 40%;
-  margin : .5rem 0 1rem 0;
-  padding : .3rem;
-  background: linear-gradient(black, #8bbbe9);
-  border-bottom-right-radius: 20%;
-}
-
-.stockBot{
-  margin : 1vh 0 .5vh 0;
-  border-top-left-radius: 20%;
-}
-
-.shuttleHeartContainer{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.botContainer{
-  justify-content: flex-end;
-}
-
-.shuttleGame{
-  width : 10vh;
-  height: auto;
-  background: url('../img/space-shuttle.png');
-  background-size: cover;
-}
-
-.shuttlePlayer{
-  transform: rotate(25deg);
-  margin-left : 1vh;
-}
-
-.shuttleBot{
-  transform: rotate(-160deg);
-  margin-right : 1vh;
-}
-
-.lifeBar{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 3vh;
-  margin : 0 1vh;
-}
-
-.heart{
-  box-sizing: border-box;
-}
-
-.historicContainer{
-  width: 95%;
-  height: 25vh;
-  max-height: 25vh;
-  margin: 1rem auto;
-  background-color: lightslategrey;
-  background: linear-gradient(black, #8bbbe9);
-  overflow: scroll;
-  text-align: left;
-  font-size: 2.5vh;
-}
-
-.inputGame{
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(black, #8bbbe9);
-  margin-bottom: 1rem;
-}
-
-.labelInputGame{
-  padding : .3rem;
-}
-
-.inputMissiles{
-  width:40%;
-  margin-right: .3rem;
-}
-
-.buttonDisable{
-  height: 35%;
-  background-color: grey;
-  color : darkgray;
-  border-color: darkgrey;
-}
-
-.fireButton{
-  height: 35%;
-  
-}
-
-
-/* RULES PAGE --------------------------------------*/
-@keyframes glow {
-  from {
-    color: #fff;
-    text-shadow: 0 0 10px #c03aae, 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 90px #c03aae;
-  }
-  to {
-    color: gray;
-    text-shadow: 0 0 20px #c03aae, 0 0 30px #c03aae, 0 0 40px #c03aae, 0 0 50px #c03aae, 0 0 60px #c03aae, 0 0 70px #c03aae, 0 0 80px #c03aae, 0 1 90px #c03aae;
-  }
-}
-
-@keyframes titleUp {
-  from {
-    top : 40%;
-  }
-  to {
-    top : 0%;
-  }
-}
-
-@keyframes colorChange {
-  from {
-color: rgb(255, 255, 255, 0);
-  }
-  to {
-color: rgb(255, 255, 255, 1);
-  }
-}
-
-.titleRules{
-  position : relative;
-  font-size: 4vh;
-  margin : 5%; 
-  animation: glow 2s ease-in-out infinite alternate, titleUp 2s ease-in-out 1s both; 
-}
-
-.rules{
-  text-align: left;
-  font-size: 2.3vh;
-  margin : 3vh;
-  padding: 1.5vh;
-  border : 2px solid white;
-  border-radius: 20px;
-  animation: colorChange 1s linear 2s both;
-}
-
- .curseur{ 
-  animation: colorChange 600ms ease-in-out infinite alternate;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:visited{
-  color: white;
-}
-
-.buttonRow{
-  margin-top: 10%;
-  text-align: center; 
-
-  
- 
-}
-  
-
-/*CREDIT PAGE---------------------------------- */
-.creditsTitle {
-  display: flex;
-  justify-content: space-around;
-}
-
-.horizontalSlider {
-  display: block;
-  width: 100%;
-  height: 90%;
-  overflow-x: scroll;
-  white-space: nowrap;
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 30px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: grey; 
-  border-radius: 10px;
-} 
-
-.item {
-  width: 100%;
-  height: 90%;
-  display: inline-block;
-}
-
-.photoContainer{
-  width: auto;
-  height: 50%;
-}
-
-.margin{
-  margin-right : 2vh;
-  margin-left : 2vh;
-}
-
-.memberPhoto {
-  height: 100%;
-  box-sizing: content-box;
-}
-
-.memberContact {
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-}
-
-.memberName {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.description {
-  white-space: normal;
-  text-align: center;
-  padding : 1vh;
-}
-
-.victoryImg{
-  border-radius: 50%;
-  width: 40vh;
 }
