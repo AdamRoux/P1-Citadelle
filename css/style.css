@@ -87,7 +87,7 @@ footer {
 .button{
   font-family: 'Press Start 2P', cursive;
   background: linear-gradient(black, #8bbbe9);
-  width :55%;
+  width:55%;
   min-width: 200px;
   font-size : 2vh;
   padding: 1.3vh 0;
@@ -279,7 +279,7 @@ a:visited{
 }
 
 .buttonRow{
-  margin-top: 10%;
+  margin-top: 5%;
   text-align: center;
 }
   
