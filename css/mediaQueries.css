@@ -1,4 +1,9 @@
 @media screen and (min-width: 500px){
+
+  .animationButton:hover {
+    animation: none;
+  }
+
   /* HOME PAGE */
   .imgHome{
       height: 100%;
@@ -17,9 +22,7 @@
   }
 
   .button{
-      height: 10%;
       padding-top : 2vh;
-      padding-bottom: 0;
   }
 
   /* GAME PAGE*/
@@ -28,32 +31,32 @@
     font-size : 1.3rem;
     display: flex;
     justify-content: space-around;
-}
+  }
 
-.player, .bot{
-  width: auto;
-  justify-content: center;
-}
+  .player, .bot{
+    width: auto;
+    justify-content: center;
+  }
 
-.stock{
-  max-width: 30vh;
-  position: fixed;
-  top : 15vh;
-  left : 0;
-}
+  .stock{
+    max-width: 30vh;
+    position: fixed;
+    top : 15vh;
+    left : 0;
+  }
 
-.stockBot{
-  left: auto;
-  right : 0;
-}
+  .stockBot{
+    left: auto;
+    right : 0;
+  }
 
-.shuttleGame{
-  width : 15vh;
-}
+  .shuttleGame{
+    width : 15vh;
+  }
 
-.shuttleHeartContainer{
-  margin-top : 7vh;
-}
+  .shuttleHeartContainer{
+    margin-top : 7vh;
+  }
 
   .botContainer{
       margin-top : 18%;
@@ -116,7 +119,7 @@
 }
 
 .fight{
-  padding-bottom: 2vh ;
+  padding-bottom: 1.5vh ;
   width: 15%;
 }
 
