@@ -56,6 +56,10 @@ footer {
 
 
 /* HOME PAGE -------------------------------*/
+.animationButton:hover {
+  animation: none;
+}
+
 .imgHome{
   width: 100%;
   height: 50%;
